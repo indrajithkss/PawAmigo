@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General Checkbox Style -->
+    <style name="StyledCheckbox" parent="Theme.AppCompat">
+        <item name="android:buttonTint">@color/primary_blue</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Card-style Checkbox (used in white rounded cards) -->
+    <style name="StyledCardCheckbox" parent="Theme.AppCompat">
+        <item name="android:buttonTint">@color/primary_blue</item>
+        <item name="android:background">@drawable/card_rounded_white</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <!-- Rounded Border Checkbox (used in grid section like Preferred Times) -->
+    <style name="StyledRoundedCheckbox" parent="Theme.AppCompat">
+        <item name="android:buttonTint">@color/primary_blue</item>
+        <item name="android:background">@drawable/rounded_outline_box</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+</resources>

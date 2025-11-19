@@ -1,0 +1,28 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# Local configuration (private)
+local.properties
+
+# Firebase config (private)
+app/google-services.json
+
+# Keystore (private, DO NOT SHARE)
+*.jks
+*.keystore
+
+# IDEA / Android Studio project files
+.idea/
+*.iml
+
+# Captures
+captures/
+
+# Native build folders
+.cxx/
+externalNativeBuild/
+
+# System files
+.DS_Store

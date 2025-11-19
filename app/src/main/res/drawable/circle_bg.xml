@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Background color -->
+    <solid android:color="#2A2A2A"/>  <!-- You can use any color here -->
+
+    <!-- Optional border -->
+    <stroke
+        android:width="2dp"
+        android:color="#444444" />
+
+    <!-- Size (optional, depends on where you use it) -->
+    <size
+        android:width="48dp"
+        android:height="48dp" />
+
+</shape>

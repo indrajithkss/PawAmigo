@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#022F2B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Preferences"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/almost_white"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- PLAYDATE PREFERENCES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Playdate Preferences"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/almost_white"
+            android:layout_marginBottom="10dp" />
+
+        <CheckBox
+            android:id="@+id/cbIndoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indoor Playdates" />
+
+        <CheckBox
+            android:id="@+id/cbOutdoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outdoor Activities" />
+
+        <CheckBox
+            android:id="@+id/cbGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group Playdates (3+ pets)" />
+
+        <CheckBox
+            android:id="@+id/cbOneOnOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One-on-One Playdates" />
+
+        <!-- MAX DISTANCE SLIDER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maximum Distance for Playdates"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/almost_white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
+
+        <SeekBar
+            android:id="@+id/seekDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="3" />
+
+        <TextView
+            android:id="@+id/tvDistanceValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.0 miles"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- PREFERRED TIMES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferred Times"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/almost_white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
+
+        <CheckBox
+            android:id="@+id/cbMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Morning" />
+
+        <CheckBox
+            android:id="@+id/cbAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afternoon" />
+
+        <CheckBox
+            android:id="@+id/cbEvening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evening" />
+
+        <CheckBox
+            android:id="@+id/cbWeekends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekends" />
+
+        <!-- ✅ COMMUNICATION SECTION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Communication"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/almost_white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
+
+        <CheckBox
+            android:id="@+id/cbEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Notifications" />
+
+        <CheckBox
+            android:id="@+id/cbPush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Push Notifications" />
+
+        <CheckBox
+            android:id="@+id/cbSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Reminders"
+            android:layout_marginBottom="24dp" />
+
+        <!-- BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Back"
+                android:backgroundTint="@color/gray"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Continue"
+                android:backgroundTint="@color/salmon"
+                android:textColor="@color/white"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

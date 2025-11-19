@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PawAmigo</string>
+    <string-array name="pet_filters">
+        <item>All</item>
+        <item>Dogs</item>
+        <item>Cats</item>
+    </string-array>
+</resources>
