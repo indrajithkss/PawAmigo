@@ -1,136 +1,112 @@
-PawAmigo – Pet Care & Social Companion App
+# 🐾 PawAmigo – Pet Care & Social Companion App
 
-PawAmigo is a modern Android application built to simplify pet care and connect pet owners through a social and interactive platform.
-The app offers daily pet management tools, community interaction, playdate scheduling, and owner discovery — all wrapped in a smooth, animated, user-friendly interface.
-Developed using Kotlin, Firebase Authentication, Firestore, Glide, and Android Jetpack components.
+A modern Android application that helps pet owners manage their pets, discover nearby pet lovers, schedule playdates, and engage with a social community.
 
- Features
-1. Home Dashboard
-Displays daily pet care activities
-Built-in reminders (Feed, Walk, Vet Visit)
-Motivational pet quotes
-Clean card-based UI with animations
+Built using **Kotlin, Firebase Authentication, Cloud Firestore, Glide, and Android Jetpack Components**.
 
-🔍 2. Nearby Pet Owners
-Discover nearby pet owners with:
-Pet name
-Breed
-Distance
-Profile image
-“Connect” button (UI — extendable for future messaging)
+---
 
-💬 3. Community Feed
-A full social feed experience including:
-Create posts (text + locally loaded images, no Firebase Storage required)
-Instagram-like feed UI
-Double-tap like animation
-Comment system
-Smooth image loading using Glide
-Key Files:
-CommunityFragment.kt, PostAdapter.kt, CreatePostActivity.kt, CommentsActivity.kt, Utils.kt
+## ✨ Key Features
 
-4. Pet Registration
-Collects and stores:
-Pet name
-Breed
-Age
-Photo (local image)
-Saved in Firebase Firestore
-File: PetRegistrationActivity.kt
-👤 5. Owner Registration
-Captures:
-Owner name
-Email
-Contact number
-Experience level
-Integrated with Firebase Authentication + Firestore
-File: OwnerRegistrationActivity.kt
+### 🏠 Smart Pet Dashboard
 
-🔐 6. Login / Signup
-Email & Password authentication
-Firebase release + debug SHA-1 keys fully configured
-Secure session management
-File: LoginActivity.kt
+* Daily pet care tracking
+* Feed reminders
+* Walk reminders
+* Vet visit notifications
+* Motivational pet quotes
+* Smooth animated UI
 
-🎉 7. Playdate Management
-Create and view playdates
-Playdate listing with custom adapter
-Interactive UI for scheduling
-Files: Playdate.kt, PlaydateActivity.kt, PlaydateAdapter.kt
+### 🐕 Pet Registration
 
-🧱 Project Structure
-app/
- ├── manifests/
- │    └── AndroidManifest.xml
- │
- ├── java/com/app/pawamigo/
- │    ├── community/
- │    ├── fragments/
- │    ├── ui/
- │    │     └── onboarding/
- │    └── model + utils files
- │
- ├── res/
- │    ├── anim/
- │    ├── color/
- │    ├── drawable/
- │    ├── layout/
- │    ├── menu/
- │    ├── mipmap/
- │    ├── values/
- │    └── xml/
- │
- ├── build.gradle.kts        (Module)
- ├── build.gradle.kts        (Project)
- ├── settings.gradle.kts
- ├── proguard-rules.pro
- └── libs.versions.toml
+Register and manage pets with:
 
-🔧 Tech Stack
-Category	  Technology
-Language	  Kotlin
-UI	XML,    Material Components
-Backend	    Firebase Authentication, Firebase Firestore
-Images	    Glide
-Build	Gradle (Kotlin DSL)
-Architecture	Activity + Fragment-based
-Animations	Custom fade, double-tap like
-🗄 Firebase Integration
-✔ Enabled Services
+* Pet name
+* Breed
+* Age
+* Pet profile photo
 
-Firebase Authentication
-Cloud Firestore
-❌ Not Used
-Firebase Storage (images handled locally)
+Data is securely stored in Firebase Firestore.
 
-📌 Required
-Place your Firebase config here:
-app/google-services.json
-🔑 App Signing
-Both Debug and Release signing configurations are supported.
-Debug key: debug.keystore
-Release key: my-release-key.jks
-Ensure SHA-1 and SHA-256 fingerprints from the release key are added in your Firebase project settings.
+---
 
-▶ How to Run the Project
-1. Clone the Repository
-git clone https://github.com/indrajithkss/PawAmigo.git
+### 👤 Owner Registration
 
-2. Open in Android Studio
-Recommended versions: Hedgehog, Iguana, or above.
+Store owner information including:
 
-3. Add Firebase Config
-Place your config file in:
+* Name
+* Email
+* Contact Number
+* Experience Level
 
-app/google-services.json
+Integrated with Firebase Authentication and Firestore.
 
-4. Sync Project
-Go to: File → Sync Project with Gradle Files
+---
 
-5. Run the App
-Select a device → Click Run ▶
+### 🔍 Nearby Pet Owners
 
-📸 Screenshots
+Discover nearby pet owners through an interactive interface:
+
+* Pet profile image
+* Pet name & breed
+* Distance display
+* Connect button
+* Expandable for future chat functionality
+
+---
+
+### 💬 Community Feed
+
+A social-media-inspired experience for pet lovers.
+
+Features include:
+
+* Create posts
+* Share pet photos
+* Like posts
+* Comment system
+* Double-tap like animation
+* Instagram-style feed
+
+Core Files:
+
+* CommunityFragment.kt
+* PostAdapter.kt
+* CreatePostActivity.kt
+* CommentsActivity.kt
+
+---
+
+### 🎉 Playdate Scheduling
+
+Create and manage pet meetups.
+
+Features:
+
+* Create playdates
+* Browse upcoming playdates
+* Custom playdate cards
+* Interactive scheduling UI
+
+Core Files:
+
+* Playdate.kt
+* PlaydateActivity.kt
+* PlaydateAdapter.kt
+
+---
+
+### 🔐 Authentication & Security
+
+* Firebase Authentication
+* Email & Password Login
+* Persistent sessions
+* Secure user management
+* Release & Debug SHA support
+
+---
+
+## 📸 Application Screenshots
 <img width="334" height="733" alt="Screenshot 2025-11-19 224642" src="https://github.com/user-attachments/assets/ece59191-c0ca-429f-8d2b-9690f84df1bd" />
 <img width="336" height="722" alt="Screenshot 2025-11-19 224617" src="https://github.com/user-attachments/assets/860a15d1-3445-4d93-8401-c34aff1fc278" />
 <img width="333" height="720" alt="Screenshot 2025-11-19 225149" src="https://github.com/user-attachments/assets/74e3b57a-ce96-46c2-837e-5ca12ede2148" />
@@ -139,18 +115,198 @@ Select a device → Click Run ▶
 <img width="339" height="640" alt="Screenshot 2025-11-19 225447" src="https://github.com/user-attachments/assets/93dd632e-088d-4987-8ec8-4fc60be28e4e" />
 <img width="341" height="723" alt="Screenshot 2025-11-19 225503" src="https://github.com/user-attachments/assets/0baf2c4c-5f4b-4ece-9cfe-867fa7c82cef" />
 
+---
 
-🤝 Contributing
+## 🏗 Project Architecture
 
-Contributions, improvements, and feature additions are welcome!
-Feel free to open issues or submit pull requests.
+```text
+PawAmigo
+│
+├── Authentication
+├── Owner Management
+├── Pet Management
+├── Community Feed
+├── Playdate Scheduling
+└── Firebase Backend
+```
 
-👨‍💻 Developer
+---
 
-Indrajith KS
-Ihsana S Ibrahim
-GitHub: https://github.com/indrajithkss
+## 🛠 Technology Stack
 
-📄 License
+### Android Development
 
-MIT License — free for personal, academic, and open-source usage.
+* Kotlin
+* Android Studio
+* XML Layouts
+* Material Design Components
+
+### Firebase
+
+* Firebase Authentication
+* Cloud Firestore
+
+### Libraries
+
+* Glide
+* Android Jetpack Components
+
+### Build Tools
+
+* Gradle (Kotlin DSL)
+
+---
+
+## 📂 Project Structure
+
+```bash
+app/
+├── manifests/
+│   └── AndroidManifest.xml
+│
+├── java/com/app/pawamigo/
+│   ├── community/
+│   ├── fragments/
+│   ├── ui/
+│   ├── model/
+│   └── utils/
+│
+├── res/
+│   ├── anim/
+│   ├── drawable/
+│   ├── layout/
+│   ├── menu/
+│   ├── values/
+│   └── xml/
+│
+├── build.gradle.kts
+├── settings.gradle.kts
+├── libs.versions.toml
+└── proguard-rules.pro
+```
+
+---
+
+## 🔥 Firebase Configuration
+
+Place your Firebase configuration file here:
+
+```bash
+app/google-services.json
+```
+
+### Enabled Firebase Services
+
+✅ Firebase Authentication
+
+✅ Cloud Firestore
+
+❌ Firebase Storage (Not Used)
+
+Images are stored locally and loaded using Glide.
+
+---
+
+## 🔑 App Signing
+
+Supported Configurations:
+
+* Debug Signing
+* Release Signing
+
+Required Keys:
+
+```text
+debug.keystore
+my-release-key.jks
+```
+
+Make sure SHA-1 and SHA-256 fingerprints are added in Firebase Console.
+
+---
+
+## 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone https://github.com/indrajithkss/PawAmigo.git
+```
+
+### Open in Android Studio
+
+Recommended:
+
+* Android Studio Hedgehog
+* Android Studio Iguana
+* Newer versions
+
+### Configure Firebase
+
+Add:
+
+```bash
+app/google-services.json
+```
+
+### Sync Project
+
+```text
+File → Sync Project with Gradle Files
+```
+
+### Run Application
+
+```text
+Select Device → Run ▶
+```
+
+---
+
+## 🎯 Future Enhancements
+
+* Real-time messaging
+* Friend requests
+* Pet adoption marketplace
+* Veterinary appointment booking
+* Push notifications
+* Firebase Storage integration
+* Location-based recommendations
+
+---
+
+## 🤝 Contributing
+
+Contributions, improvements, and feature suggestions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+## 👨‍💻 Developers
+
+### Indrajith K S
+
+GitHub:
+https://github.com/indrajithkss
+
+### Ihsana S Ibrahim
+
+Co-Developer
+---
+
+
+
+
+
+
+
+
+
+
+
+
+📸 Screenshots
