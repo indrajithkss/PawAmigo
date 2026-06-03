@@ -298,15 +298,3 @@ https://github.com/indrajithkss
 Co-Developer
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-📸 Screenshots
